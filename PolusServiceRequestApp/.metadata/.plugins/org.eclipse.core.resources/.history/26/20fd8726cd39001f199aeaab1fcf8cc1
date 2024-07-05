@@ -1,5 +1,0 @@
-package com.example.polusServiceRequest.loginRepository;
-
-public interface LoginRepository {
-
-}

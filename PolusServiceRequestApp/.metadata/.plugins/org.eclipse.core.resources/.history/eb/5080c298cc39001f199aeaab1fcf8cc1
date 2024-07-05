@@ -1,8 +1,0 @@
-package com.example.polusServiceRequest.loginController;
-
-import org.springframework.stereotype.Controller;
-
-@Controller
-public class loginController {
-
-}
