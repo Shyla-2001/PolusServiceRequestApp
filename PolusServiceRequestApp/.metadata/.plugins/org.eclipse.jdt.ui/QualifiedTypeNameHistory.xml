@@ -2,4 +2,9 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="com.example.polusServiceRequest.loginService.LoginService"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMethod"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="com.example.polusServiceRequest.loginDomain.User"/>
+    <fullyQualifiedTypeName name="com.example.polusServiceRequest.LoginDTO.SignUpDTO"/>
 </qualifiedTypeNameHistroy>

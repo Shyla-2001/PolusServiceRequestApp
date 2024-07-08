@@ -1,0 +1,64 @@
+package com.example.polusServiceRequest.loginDomain;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "user_role")
+public class UserRoleEntity {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id; // Primary key for UserRoleEntity
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "userid") // Foreign key to UserEntity
+    private UserEntity user; // Many-to-one relationship with UserEntity
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "roleid") // Foreign key to RoleEntity
+    private RoleEntity role; // Many-to-one relationship with RoleEntity
+
+    public UserRoleEntity() {
+        // Default constructor
+    }
+
+    public UserRoleEntity(Long id, UserEntity user, RoleEntity role) {
+        this.id = id;
+        this.user = user;
+        this.role = role;
+    }
+
+    // Getters and setters for all fields
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public UserEntity getUser() {
+        return user;
+    }
+
+    public void setUser(UserEntity user) {
+        this.user = user;
+    }
+
+    public RoleEntity getRole() {
+        return role;
+    }
+
+    public void setRole(RoleEntity role) {
+        this.role = role;
+    }
+}
