@@ -1,8 +1,13 @@
 package com.example.polusServiceRequest.loginService;
 
-import com.example.polusServiceRequest.loginDomain.User;
+import com.example.polusServiceRequest.LoginDTO.SignInResponseDTO;
+import com.example.polusServiceRequest.LoginDTO.SignUpDTO;
+import com.example.polusServiceRequest.loginDomain.UserEntity;
 
 public interface LoginService {
 
-	User signIn(String username, String password);
+	SignInResponseDTO signIn(String username, String password);
+
+	UserEntity signUp(SignUpDTO signUpDTO);
+
 }

@@ -1,0 +1,29 @@
+package com.example.polusServiceRequest.LoginDTO;
+
+public class RoleDTO {
+
+    private Long roleId;
+    private String roleName;
+    private String roleDescription;
+	public Long getRoleid() {
+		return roleId;
+	}
+	public void setRoleid(Long roleid) {
+		this.roleId = roleid;
+	}
+	public String getRolename() {
+		return roleName;
+	}
+	public void setRolename(String rolename) {
+		this.roleName = rolename;
+	}
+	public String getRoledescription() {
+		return roleDescription;
+	}
+	public void setRoledescription(String roledescription) {
+		this.roleDescription = roledescription;
+	}
+
+    // Getters and setters
+    
+}

@@ -1,0 +1,10 @@
+package com.example.polusServiceRequest.LoginDTO;
+
+public class RoleDTO {
+
+    private Long roleid;
+    private String rolename;
+    private String roledescription;
+
+    // Getters and setters
+}
